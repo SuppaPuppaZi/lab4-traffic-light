@@ -71,6 +71,7 @@ class TrafficLightHistory:
 class SmartTrafficLightHistory(TrafficLightHistory):
     
     def get_sorted_by_start_datetime(self):
+		print("Сортировка\n")
         return sorted(self._records, key=lambda x: x.start_datetime)
     
     def get_sorted_by_cars_passed(self):
